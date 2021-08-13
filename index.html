@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video-box {
+            height: 500px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .video-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="video-box">
+            <video class="video-container" poster="thum.jpg" autoplay muted>
+                <source src="bridge.mp4" type="video/mp4">
+            </video>
+            <h3 class="video-title">Buy! Pepe!</h3>
+        </div>
+    </div>
+</body>
+</html>
